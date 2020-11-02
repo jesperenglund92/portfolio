@@ -1,3 +1,39 @@
+.w3-theme-1 {color:#fff !important;background-color:#d9e4dd !important}
+.w3-theme-light-1 {color:#000 !important;background-color:#fdfdfd !important}
+.w3-theme-dark-1 {color:#fff !important;background-color:#5c826a !important}
+
+.w3-text-theme-1 {color:#d9e4dd !important}
+.w3-border-theme-1 {border-color:#d9e4dd !important}
+.w3-hover-theme-1:hover {color:#000 !important; background-color:#d9e4dd !important}
+.w3-hover-border-theme-1:hover {border-color:#d9e4dd !important}
+
+.w3-theme-2 {color:#fff !important;background-color:#fbf7f0 !important}
+.w3-theme-light-2 {color:#000 !important;background-color:#fffefe !important}
+.w3-theme-dark-2 {color:#fff !important;background-color:#c18d33 !important}
+
+.w3-text-theme-2 {color:#d9e4dd !important}
+.w3-border-theme-2 {border-color:#d9e4dd !important}
+.w3-hover-theme-2:hover {color:#000 !important; background-color:#d9e4dd !important}
+.w3-hover-border-theme-2:hover {border-color:#d9e4dd !important}
+
+.w3-theme-3 {color:#fff !important;background-color:#cdc9c3 !important}
+.w3-theme-light-3 {color:#000 !important;background-color:#fcfcfb !important}
+.w3-theme-dark-3 {color:#fff !important;background-color:#6c655a !important}
+
+.w3-text-theme-3 {color:#cdc9c3 !important}
+.w3-border-theme-3 {border-color:#cdc9c3 !important}
+.w3-hover-theme-3:hover {color:#000 !important; background-color:#cdc9c3 !important}
+.w3-hover-border-theme-3:hover {border-color:#cdc9c3 !important}
+
+.w3-theme-4 {color:#fff !important;background-color:#555555 !important}
+.w3-theme-light-4 {color:#000 !important;background-color:#f5f5f5 !important}
+.w3-theme-dark-4 {color:#fff !important;background-color:#2a2a2a !important}
+
+.w3-text-theme-4 {color:#555555 !important}
+.w3-border-theme-4 {border-color:#555555 !important}
+.w3-hover-theme-4:hover {color:#000 !important; background-color:#555555 !important}
+.w3-hover-border-theme-4:hover {border-color:#555555 !important}
+
 .palette-one {
   color: #d9e4dd;
   background-color: #d9e4dd;
