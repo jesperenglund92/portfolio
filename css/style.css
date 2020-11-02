@@ -34,6 +34,12 @@
 .w3-hover-theme-4:hover {color:#000 !important; background-color:#555555 !important}
 .w3-hover-border-theme-4:hover {border-color:#555555 !important}
 
+.w3-theme-l5 {color:#000 !important;background-color:#fff !important}
+.w3-theme-l4 {color:#000 !important;background-color:#555555 !important}
+.w3-theme-l3 {color:#000 !important;background-color:#cdc9c3 !important}
+.w3-theme-l2 {color:#fff !important;background-color:#fbf7f0 !important}
+.w3-theme-l1 {color:#fff !important;background-color:#d9e4dd !important}
+
 .palette-one {
   color: #d9e4dd;
   background-color: #d9e4dd;
