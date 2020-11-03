@@ -24,9 +24,46 @@ function myFunction() {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
+var modals = document.getElementsByClassName("w3-modal");
+var modalsLength = modals.length;
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  for (var i = 0; i < modalsLength; i++){
+    if (event.target == modals[i]) {
+      modals[i].style.display = "none";
+    }
+  }
+}
+
+var flinas = document.getElementById("flinas");
+flinas.addEventListener('click', function(){
+    slidemodal(0, 1);
+});
+var blinas = document.getElementById("blinas");
+blinas.addEventListener('click', function(){
+    slidemodal(0, 2);
+});
+var fbet = document.getElementById("fbet");
+fbet.addEventListener('click', function(){
+    slidemodal(1, 2);
+});
+var bbet = document.getElementById("bbet");
+bbet.addEventListener('click', function(){
+    slidemodal(1, 0);
+});
+var fbes = document.getElementById("fbes");
+fbes.addEventListener('click', function(){
+    slidemodal(2, 0);
+});
+var bbes = document.getElementById("bbes");
+bbes.addEventListener('click', function(){
+    slidemodal(2, 1);
+});
+function slidemodal(current, newmodal) {
+  console.log(flinas.id);
+  for (var i = 0; i < modalsLength; i++){
+    if (modals[i].id == modals[current].id){
+      modals[newmodal].style.display = "block";
+      modals[i].style.display = "none";
+    }
   }
 }
