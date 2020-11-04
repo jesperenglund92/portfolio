@@ -1,7 +1,7 @@
 .palette-1 {color:#fff !important;background-color:#bed1c5 !important}
-.palette-1-light {color:#000 !important;background-color:#fdfdfd !important}
+.palette-1-light {color:#000 !important;background-color:#f2f6f3 !important}
 .palette-1-dark {color:#fff !important;background-color:#5c826a !important}
-.p1:hover {color:#000 !important;background-color:#fdfdfd !important}
+.p1:hover {color:#000 !important;background-color:#f2f6f3 !important}
 
 .palette-2 {color:#000 !important;background-color:#fbf7f0 !important}
 .palette-2-light {color:#000 !important;background-color:#fffefe !important}
@@ -9,6 +9,8 @@
 
 .jobcontainer {margin:0px !important}
 .jobcontainer:hover {color:#000 !important;background-color:#fffefe !important}
+.jobcontainer:active {border:0px !important; outline: 0}
+.jobcontainer:focus {border:0px !important; outline: 0}
 
 .palette-3 {color:#fff !important;background-color:#cdc9c3 !important}
 .palette-3-light {color:#000 !important;background-color:#fcfcfb !important}
@@ -41,7 +43,7 @@
 .nextbtn {
   background-color:transparent;
   border:0px;
-  color: #555555;
+  color: #fff;
 }
 .nextbtn:hover {
   color: #555;
@@ -50,22 +52,24 @@
 
 .nextbtn:visited {
   background-color:transparent;
-  border:0px !important;
+  border:0px !important
 }
 
 .nextbtn:active {
+  color: #555;
   background-color:transparent;
   border:0px !important;
-  outline: 0;
-}
-.nextbtn:link {
-  background-color:transparent;
-  border:0px !important;
-  outline: 0;
+  outline: 0
 }
 
 .nextbtn:focus {
+  color: #555;
   background-color:transparent;
   border:0px !important;
-  outline: 0;
+  outline: 0
+}
+
+.side-padding-32 {
+  padding-left: 64px;
+  padding-right: 64px
 }
