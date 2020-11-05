@@ -157,6 +157,72 @@
     <!-- The Portfolio Section -->
     <div class="w3-container w3-center palette-2 main-font l12" style="width:100% !important; padding:0px" id="portfolio">
       <h2 class="w3-wide header">PORTFOLIO</h2>
+      <div class="w3-row" style="margin:0px !important">
+        <div class="w3-display-container" style="margin:10px !important">
+          <div class="portfolioSlides zeropad" style="width:100%">
+            <div class="w3-row" style="margin:0px !important">
+              <div class="zeropad w3-col s4 m2 l2">
+                <img class="zeropad" src="images/challengeme/start.png" style="width:100%">
+              </div>
+              <div class="zeropad w3-col s4 m2 l2">
+                <img class="zeropad" src="images/challengeme/mainmap.png" style="width:100%">
+              </div>
+              <div class="zeropad w3-col s4 m2 l2">
+                <img class="zeropad" src="images/challengeme/createchallenge.png" style="width:100%">
+              </div>
+              <div class="zeropad w3-col s4 m2 l2">
+                <img class="zeropad" src="images/challengeme/placechallenge.png" style="width:100%">
+              </div>
+              <div class="zeropad w3-col s4 m2 l2">
+                <img class="zeropad" src="images/challengeme/mapchallenge.png" style="width:100%">
+              </div>
+              <div class="zeropad w3-col s4 m2 l2">
+                <img class="zeropad" src="images/challengeme/challenge.png" style="width:100%">
+              </div>
+            </div>
+            <button class="w3-button palette-1 w3-display-topleft" onclick="document.getElementById('cmModal').style.display='block'">Challenge Me</button>
+          </div>
+          <div class="portfolioSlides zeropad">
+            <img class="zeropad" src="images/moore.png" style="width:100%">
+            <button class="w3-button palette-1 w3-display-topleft" onclick="document.getElementById('stellARModal').style.display='block'">StellAR</button>
+          </div>
+          <div class="portfolioSlides zeropad">
+            <img class="zeropad" src="images/moore.png" style="width:100%">
+          </div>
+          <button class="w3-button palette-1 w3-display-left" onclick="plusDivs(-1)" style="margin:10px !important">&#10094;</button>
+          <button class="w3-button palette-1 w3-display-right" onclick="plusDivs(1)" style="margin:10px !important">&#10095;</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ChallengeMe Modal -->
+    <div id="cmModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container palette-1 w3-center w3-padding-32">
+          <span onclick="document.getElementById('cmModal').style.display='none'"
+         class="w3-button palette-1 p1 w3-xlarge w3-display-topright">×</span>
+         <h2 class="w3-wide">Challenge Me</h2>
+         <p class="w3-center"><i>A skater challenge app</i></p>
+       </header>
+       <div class="w3-container palette-2 side-padding-32">
+         <p>A mobile application made with the React framework</p>
+       </div>
+      </div>
+    </div>
+
+    <!-- StellAR Modal -->
+    <div id="stellARModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container palette-1 w3-center w3-padding-32">
+          <span onclick="document.getElementById('stellARModal').style.display='none'"
+         class="w3-button palette-1 p1 w3-xlarge w3-display-topright">×</span>
+         <h2 class="w3-wide">StellAR</h2>
+         <p class="w3-center"><i>A stellar system creator and simulator in AR</i></p>
+       </header>
+       <div class="w3-container palette-2 side-padding-32">
+         <p>Moore coming...</p>
+       </div>
+      </div>
     </div>
 
     <!-- The Contact Section -->
