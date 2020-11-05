@@ -78,3 +78,16 @@
   padding: 0px !important;
   margin: 0px !important
 }
+
+ul.myList {
+  list-style: none; /* Remove default bullets */
+}
+
+ul.myList li::before {
+  content: "\2022";
+  color: #bed1c5;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
