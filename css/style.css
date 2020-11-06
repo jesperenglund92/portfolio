@@ -91,3 +91,22 @@ ul.myList li::before {
   width: 1em;
   margin-left: -1em;
 }
+
+.speech {
+  position: relative;
+  width: 200px;
+  height: 193px;
+  float:left;
+  text-align: center;
+  line-height: 100px;
+  background-color: #fff;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+  display: none;
+  margin:0px !important;
+}
+
+.buildstuff:hover {
+  display: block;
+}

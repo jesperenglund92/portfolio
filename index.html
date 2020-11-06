@@ -38,10 +38,15 @@
     <!-- Home Section -->
     <div class="w3-row">
       <div class="w3-col w3-container m6 l7 palette-1 main-font col-1" id="greeting">
-        <div class="w3-container w3-center">
+        <div class="w3-display-container w3-center" style="position:relative;">
+          <div style='position:absolute' class="speech w3-display-middle" id="cardhouse">
+            <img src="images/cardhouse.png" style="width:100%"/>
+          </div>
           <p>Hi!</p>
           <p class="medium">I'm Jesper Englund</p>
-          <p style="font-size:25px"><i>I like to build stuff on computers</i></p>
+              <!--<div style='position:absolute' class="speech" id="cardhouse">
+                <img src="images/cardhouse.png" style="width:100%"/>-->
+          <p class="buildstuff" style="font-size:25px" onmouseover="showch()" onmouseout="hidech()"><i>I like to build stuff on computers</i></p>
         </div>
       </div>
       <div class="w3-col w3-container m6 l5">
@@ -243,7 +248,7 @@
         <div class="w3-display-middle w3-left" style="width:350px">
           <div class="w3-large w3-margin-bottom">
             <i class="fa fa-map-marker" style="width:30px"></i> Stockholm, Sweden<br>
-            <i class="fa fa-phone" style="width:30px"></i> +46702762472<br>
+            <!--<i class="fa fa-phone" style="width:30px"></i> +46702762472<br>-->
             <i class="fa fa-envelope" style="width:30px"> </i> jesper.englund92@gmail.com<br>
           </div>
           <div class="w3-xlarge">

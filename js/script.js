@@ -73,3 +73,12 @@ function slidemodal(current, newmodal) {
     }
   }
 }
+var ch = document.getElementById("cardhouse");
+function showch() {
+    ch.style.display = "block";
+}
+function hidech() {
+    ch.style.display = "none";
+}
+
+//Show buildstuff
