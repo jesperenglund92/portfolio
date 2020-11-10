@@ -197,7 +197,21 @@
             <button class="w3-button palette-1 w3-display-topleft" onclick="document.getElementById('stellARModal').style.display='block'">StellAR</button>
           </div>
           <div class="portfolioSlides zeropad">
-            <img class="zeropad" src="images/more.png" style="width:100%">
+            <div class="w3-row" style="margin:0px !important">
+              <div class="zeropad w3-col s8 m4 l4">
+                <img class="zeropad" src="images/squidster/physicalProt.png" style="width:100%">
+              </div>
+              <div class="zeropad w3-col s4 m2 l2">
+                <img class="zeropad" src="images/squidster/LBProt2.png" style="width:100%">
+              </div>
+              <div class="zeropad w3-col s4 m2 l2">
+                <img class="zeropad" src="images/squidster/PythonProt1.png" style="width:100%">
+              </div>
+              <div class="zeropad w3-col s8 m4 l4">
+                <img class="zeropad" src="images/squidster/PythonProt2.png" style="width:100%">
+              </div>
+            </div>
+            <button class="w3-button palette-1 w3-display-topleft" onclick="document.getElementById('squidModal').style.display='block'">Squidster</button>
           </div>
           <button class="w3-button palette-1 w3-display-left" onclick="plusDivs(-1)" style="margin:10px !important">&#10094;</button>
           <button class="w3-button palette-1 w3-display-right" onclick="plusDivs(1)" style="margin:10px !important">&#10095;</button>
@@ -235,8 +249,43 @@
          <p class="w3-center"><i>A stellar system creator and simulator in AR</i></p>
        </header>
        <div class="w3-container palette-2 side-padding-32">
-         <p>Moore coming...</p>
+         <ul class="myList">
+           <li>C#</li>
+           <li>Unity</li>
+           <li>Blender</li>
+         </ul>
        </div>
+      </div>
+    </div>
+
+    <!-- Squidster Modal -->
+    <div id="squidModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container palette-1 w3-center w3-padding-32">
+          <span onclick="document.getElementById('squidModal').style.display='none'"
+         class="w3-button palette-1 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Squidster (Prototype)</h2>
+          <p class="w3-center"><i>A mix between Twister and a musical sequencer</i></p>
+        </header>
+        <div class="w3-container palette-2">
+          <div class="w3-row">
+            <div class="w3-col s12 m12 l4">
+              <ul class="myList">
+                <li>Python</li>
+                <li>User studies</li>
+                <li>Sketching</li>
+                <li>Prototyping</li>
+                <li>LittleBits</li>
+               </ul>
+            </div>
+            <div class="w3-col s12 m12 l8">
+              <video style="margin:20px" width="400" controls>
+                <source src="images/squidster/squidster.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+              </video>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
