@@ -65,7 +65,6 @@ bbes.addEventListener('click', function(){
     slidemodal(2, 1);
 });
 function slidemodal(current, newmodal) {
-  console.log(flinas.id);
   for (var i = 0; i < modalsLength; i++){
     if (modals[i].id == modals[current].id){
       modals[newmodal].style.display = "block";
