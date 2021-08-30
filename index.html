@@ -14,7 +14,7 @@
 <body>
   <!-- Navbar -->
   <div class="w3-top">
-    <div class="w3-bar palette-4 w3-card main-font w3-wide">
+    <div class="w3-bar palette-2 w3-card main-font w3-wide">
       <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
       <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
       <a href="#career" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CAREER</a>
@@ -25,7 +25,7 @@
   </div>
 
   <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-  <div id="navDemo" class="w3-bar-block palette-4 w3-hide w3-hide-large w3-hide-medium w3-top main-font" style="margin-top:46px">
+  <div id="navDemo" class="w3-bar-block palette-2 w3-hide w3-hide-large w3-hide-medium w3-top main-font" style="margin-top:46px">
     <a href="#career" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CAREER</a>
     <a href="#education" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">EDUCATION</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PORTFOLIO</a>
@@ -36,55 +36,64 @@
   <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
     <!-- Home Section -->
-    <div class="w3-row">
-      <div class="w3-col w3-container m6 l7 palette-1 main-font col-1" id="greeting">
+    <div class="w3-row mySection palette-3">
+      <div class="w3-col w3-container m6 l7 main-font col-1" id="greeting">
         <div class="w3-display-container w3-center" style="position:relative;">
           <div style='position:absolute' class="speech w3-display-middle" id="cardhouse">
             <img src="images/cardhouse.png" style="width:100%"/>
           </div>
           <p>Hi!</p>
-          <p class="medium">I'm Jesper Englund</p>
+          <p class="medium">I'm <span style="color:#6c44ad">Jesper Englund</span></p>
               <!--<div style='position:absolute' class="speech" id="cardhouse">
                 <img src="images/cardhouse.png" style="width:100%"/>-->
           <p class="buildstuff" style="font-size:25px" onmouseover="showch()" onmouseout="hidech()"><i>I like to build stuff on computers</i></p>
         </div>
       </div>
       <div class="w3-col w3-container m6 l5">
-        <img src="https://raw.githubusercontent.com/jesperenglund92/portfolio/main/images/jesper.jpg" style="width:500px;float:left"/>
-        <p id="demo"></p>
+        <img src="images/jesperTransparent.png" style="width:100%;float:left;"/>
       </div>
     </div>
+    <div class="break"></div>
   </div>
 
     <!-- The Career Section -->
-    <div class="w3-container w3-center palette-2 main-font l12" style="width:100% !important; padding:0px" id="career">
+    <div class="w3-container w3-center palette-3 main-font l12 mySection" style="width:100% !important; padding:0px" id="career">
       <h2 class="w3-wide header">MY CAREER SO FAR</h2>
-      <div class="w3-row" style="margin:0px !important">
-        <button class="w3-third w3-button jobcontainer w3-padding-32" onclick="document.getElementById('linasModal').style.display='block'">
-          <p style="font-size:25px">Technical Support</p>
-          <img src="images/lmk.png" class="w3-round w3-margin-bottom" alt="Linas Matkasse" style="height:60px">
-        </button>
-        <button class="w3-third w3-button jobcontainer w3-padding-32" onclick="document.getElementById('betssonModal').style.display='block'">
-          <p style="font-size:25px">Customer Service</p>
-          <img src="images/betsson.png" class="w3-round w3-margin-bottom" alt="BetssonGroup" style="height:60px">
-        </button>
-        <button class="w3-third w3-button jobcontainer w3-padding-32" onclick="document.getElementById('besedoModal').style.display='block'">
-          <p style="font-size:25px">Customer Service</p>
-          <img src="images/besedo.png" class="w3-round" alt="Besedo" style="height:75px">
-        </button>
+      <div class="w3-row">
+        <div class="jobcontcont w3-third">
+          <button class="w3-button jobcontainer w3-padding-32 w3-card palette-1" onclick="document.getElementById('linasModal').style.display='block'">
+            <p style="font-size:25px">Technical Support</p>
+            <img src="images/lmk.png" class="w3-round w3-margin-bottom" alt="Linas Matkasse" style="width:50%">
+          </button>
+        </div>
+        <div class="jobcontcont w3-third">
+          <button class="w3-third w3-button jobcontainer w3-padding-32 w3-card palette-1" onclick="document.getElementById('betssonModal').style.display='block'">
+            <p style="font-size:25px">Customer Service</p>
+            <img src="images/betsson.png" class="w3-round w3-margin-bottom" alt="BetssonGroup" style="width:60%">
+          </button>
+        </div>
+        <div class="jobcontcont w3-third">
+          <button class="w3-third w3-button jobcontainer w3-padding-32 w3-card palette-1" onclick="document.getElementById('besedoModal').style.display='block'">
+            <p style="font-size:25px">Customer Service</p>
+            <img src="images/besedo.png" class="w3-round" alt="Besedo" style="width:50%">
+          </button>
+        </div>
       </div>
+      <div class="break"></div>
     </div>
 
     <!-- Linas Modal -->
     <div id="linasModal" class="w3-modal">
       <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container palette-1 w3-center w3-padding-32">
+        <header class="w3-display-container palette-2 w3-center w3-padding-32">
           <span onclick="document.getElementById('linasModal').style.display='none'"
-         class="w3-button palette-1 p1 w3-xlarge w3-display-topright">×</span>
+         class="w3-button palette-2 p1 w3-xlarge w3-display-topright">×</span>
           <h2 class="w3-wide">Technical Support</h2>
           <p class="w3-center"><i>Linas Matkasse | Stockholm, Sweden | 2014-2019</i></p>
+          <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="flinas"></button>
+          <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="blinas"></button>
         </header>
-        <div class="w3-container palette-2 side-padding-32">
+        <div class="w3-container palette-3 side-padding-32">
           <p><b>Some of my tasks:</b></p>
           <ul class="myList">
             <li>Reporting, analyzing, visualizing and optimizing customer service flow</li>
@@ -94,57 +103,55 @@
             <li>Customer support (phone, email, chat)</li>
           </ul>
         </div>
-        <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="flinas"></button>
-        <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="blinas"></button>
       </div>
     </div>
 
     <!-- Betsson Modal -->
     <div id="betssonModal" class="w3-modal">
       <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container palette-1 w3-center w3-padding-32">
+        <header class="w3-display-container palette-2 w3-center w3-padding-32">
           <span onclick="document.getElementById('betssonModal').style.display='none'"
-         class="w3-button palette-1 p1 w3-xlarge w3-display-topright">×</span>
+         class="w3-button palette-2 p1 w3-xlarge w3-display-topright">×</span>
          <h2 class="w3-wide">Customer Service</h2>
          <p class="w3-center"><i>Betsson Group |  Ta’ Xbiex, Malta | 2012-2013</i></p>
+         <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="fbet"></button>
+         <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="bbet"></button>
        </header>
-       <div class="w3-container palette-2 side-padding-32">
+       <div class="w3-container palette-3 side-padding-32">
          <p><b>Some of my tasks:</b></p>
          <ul class="myList">
            <li>Customer support (phone, email, chat)</li>
          </ul>
         </div>
-        <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="fbet"></button>
-        <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="bbet"></button>
       </div>
     </div>
 
     <!-- Besedo Modal -->
     <div id="besedoModal" class="w3-modal">
       <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container palette-1 w3-center w3-padding-32">
+        <header class="w3-display-container palette-2 w3-center w3-padding-32">
           <span onclick="document.getElementById('besedoModal').style.display='none'"
-         class="w3-button palette-1 p1 w3-xlarge w3-display-topright">×</span>
-         <h2 class="w3-wide">Customer Service</h2>
-         <p class="w3-center"><i>Besedo |  Gzira, Malta | 2011-2012</i></p>
+         class="w3-button palette-2 p1 w3-xlarge w3-display-topright">×</span>
+         <h2 class="w3-wide textongreen">Customer Service</h2>
+         <p class="w3-center textongreen"><i>Besedo |  Gzira, Malta | 2011-2012</i></p>
+         <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="fbes"></button>
+         <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="bbes"></button>
        </header>
-       <div class="w3-container palette-2 side-padding-32">
+       <div class="w3-container palette-3 side-padding-32">
          <p><b>Some of my tasks:</b></p>
          <ul class="myList">
            <li>Customer support (phone, email, chat)</li>
          </ul>
         </div>
-        <button class="nextbtn fa fa-4x fa-angle-right w3-display-right" id="fbes"></button>
-        <button class="nextbtn fa fa-4x fa-angle-left w3-display-left" id="bbes"></button>
       </div>
     </div>
 
     <!-- The Education Section -->
-    <div class="palette-1" id="education">
+    <div class="palette-3" id="education">
       <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
         <h2 class="w3-wide w3-center">MY EDUCATION SO FAR</h2>
 
-        <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <ul class="w3-ul w3-border w3-text-grey w3-card palette-1">
           <li class="w3-padding">
             <p><b>Master’s Programme, Interactive Media Technology</b></p>
             <p>KTH Royal Institute of Techonology</p>
@@ -162,13 +169,45 @@
           </li>
         </ul>
       </div>
+      <div class="break"></div>
     </div>
 
     <!-- The Portfolio Section -->
-    <div class="w3-container w3-center palette-2 main-font l12" style="width:100% !important; padding:0px" id="portfolio">
-      <h2 class="w3-wide header">PORTFOLIO</h2>
+    <div class="w3-container w3-center palette-3 main-font l12" style="width:100% !important; padding:0px" id="portfolio">
+      <h2 class="w3-wide header hej">PORTFOLIO</h2>
       <div class="w3-row" style="margin:0px !important">
         <div class="w3-display-container" style="margin:10px !important">
+          <div class="portfolioSlides zeropad">
+            <div class="w3-row" style="margin:0px !important">
+              <div class="zeropad w3-col s12 m4 l4">
+                <img class="zeropad" src="images/thesis/thesismap.png" style="width:100%;opacity:0.8">
+              </div>
+              <div class="zeropad w3-col s12 m4 l4">
+                <img class="zeropad" src="images/thesis/thesisdashboard.png" style="width:100%;opacity:0.8">
+              </div>
+              <div class="zeropad w3-col s12 m4 l4">
+                <img class="zeropad" src="images/thesis/thesistruck.png" style="width:100%;opacity:0.8">
+              </div>
+              <button class="w3-button palette-5 w3-display-topleft" onclick="document.getElementById('thesisModal').style.display='block'">Scania Thesis Project</button>
+            </div>
+          </div>
+          <div class="portfolioSlides zeropad">
+            <div class="w3-row" style="margin:0px !important">
+              <div class="zeropad w3-col s6 m2 l2">
+                <img class="zeropad" src="images/omino/LevelEditor.png" style="width:100%;opacity:0.8">
+              </div>
+              <div class="zeropad w3-col s6 m2 l2">
+                <img class="zeropad" src="images/omino/omino_3.png" style="width:100%;opacity:0.8">
+              </div>
+              <div class="zeropad w3-col s12 m4 l4">
+                <img class="zeropad" src="images/omino/3Close.png" style="width:100%;opacity:0.8">
+              </div>
+              <div class="zeropad w3-col s12 m4 l4">
+                <img class="zeropad" src="images/omino/finWin.png" style="width:100%;opacity:0.8">
+              </div>
+              <button class="w3-button palette-5 w3-display-topleft" onclick="document.getElementById('ominoModal').style.display='block'">Omino</button>
+            </div>
+          </div>
           <div class="portfolioSlides zeropad">
             <div class="w3-row" style="margin:0px !important">
               <div class="zeropad w3-col s4 m2">
@@ -189,38 +228,7 @@
               <div class="zeropad w3-col s4 m2">
                 <img class="zeropad" src="images/stellar/setSolidOrbit.png" style="width:100%;opacity:0.8">
               </div>
-              <button class="w3-button palette-1 w3-display-topleft" onclick="document.getElementById('stellARModal').style.display='block'">StellAR</button>
-            </div>
-          </div>
-          <div class="portfolioSlides zeropad">
-            <div class="w3-row" style="margin:0px !important">
-              <div class="zeropad w3-col s6 m2 l2">
-                <img class="zeropad" src="images/omino/LevelEditor.png" style="width:100%;opacity:0.8">
-              </div>
-              <div class="zeropad w3-col s6 m2 l2">
-                <img class="zeropad" src="images/omino/omino_3.png" style="width:100%;opacity:0.8">
-              </div>
-              <div class="zeropad w3-col s12 m4 l4">
-                <img class="zeropad" src="images/omino/3Close.png" style="width:100%;opacity:0.8">
-              </div>
-              <div class="zeropad w3-col s12 m4 l4">
-                <img class="zeropad" src="images/omino/finWin.png" style="width:100%;opacity:0.8">
-              </div>
-              <button class="w3-button palette-1 w3-display-topleft" onclick="document.getElementById('ominoModal').style.display='block'">Omino</button>
-            </div>
-          </div>
-          <div class="portfolioSlides zeropad">
-            <div class="w3-row" style="margin:0px !important">
-              <div class="zeropad w3-col s12 m4 l4">
-                <img class="zeropad" src="images/thesis/thesismap.png" style="width:100%;opacity:0.8">
-              </div>
-              <div class="zeropad w3-col s12 m4 l4">
-                <img class="zeropad" src="images/thesis/thesisdashboard.png" style="width:100%;opacity:0.8">
-              </div>
-              <div class="zeropad w3-col s12 m4 l4">
-                <img class="zeropad" src="images/thesis/thesistruck.png" style="width:100%;opacity:0.8">
-              </div>
-              <button class="w3-button palette-1 w3-display-topleft" onclick="document.getElementById('thesisModal').style.display='block'">Scania Thesis Project</button>
+              <button class="w3-button palette-5 w3-display-topleft" onclick="document.getElementById('stellARModal').style.display='block'">StellAR</button>
             </div>
           </div>
           <div class="portfolioSlides zeropad" style="width:100%">
@@ -244,7 +252,7 @@
                 <img class="zeropad" src="images/challengeme/challenge.png" style="width:100%;opacity:0.8">
               </div>
             </div>
-            <button class="w3-button palette-1 w3-display-topleft" onclick="document.getElementById('cmModal').style.display='block'">Challenge Me</button>
+            <button class="w3-button palette-5 w3-display-topleft" onclick="document.getElementById('cmModal').style.display='block'">Challenge Me</button>
           </div>
           <div class="portfolioSlides zeropad">
             <div class="w3-row" style="margin:0px !important">
@@ -261,7 +269,7 @@
                 <img class="zeropad" src="images/squidster/PythonProt2.png" style="width:100%;opacity:0.8">
               </div>
             </div>
-            <button class="w3-button palette-1 w3-display-topleft" onclick="document.getElementById('squidModal').style.display='block'">Squidster</button>
+            <button class="w3-button palette-5 w3-display-topleft" onclick="document.getElementById('squidModal').style.display='block'">Squidster</button>
           </div>
           <div class="portfolioSlides zeropad">
             <div class="w3-row" style="margin:0px !important">
@@ -274,7 +282,7 @@
               <div class="zeropad w3-col s6 m3 l3">
                 <img class="zeropad" src="images/hpi/simontest.jpg" style="width:100%;opacity:0.8">
               </div>
-              <button class="w3-button palette-1 w3-display-topleft" onclick="document.getElementById('hpiModal').style.display='block'">Human Powered Interaction Project</button>
+              <button class="w3-button palette-5 w3-display-topleft" onclick="document.getElementById('hpiModal').style.display='block'">Human Powered Interaction Project</button>
             </div>
           </div>
           <div class="portfolioSlides zeropad">
@@ -285,32 +293,104 @@
               <div class="zeropad w3-col s12 m6 l6">
                 <img class="zeropad" src="images/dnd/dndmain.png" style="width:100%;opacity:0.8">
               </div>
-              <button class="w3-button palette-1 w3-display-topleft" onclick="document.getElementById('dndModal').style.display='block'">DnD Spellbook</button>
+              <button class="w3-button palette-5 w3-display-topleft" onclick="document.getElementById('dndModal').style.display='block'">DnD Spellbook</button>
             </div>
           </div>
-          <button class="w3-button palette-1 w3-display-left" onclick="plusDivs(-1)" style="margin:10px !important">&#10094;</button>
-          <button class="w3-button palette-1 w3-display-right" onclick="plusDivs(1)" style="margin:10px !important">&#10095;</button>
+          <button class="w3-button palette-5 w3-display-left" onclick="plusDivs(-1)" style="margin:10px !important">&#10094;</button>
+          <button class="w3-button palette-5 w3-display-right" onclick="plusDivs(1)" style="margin:10px !important">&#10095;</button>
         </div>
+      </div>
+      <div class="break"></div>
+    </div>
+
+    <!-- Thesis Modal -->
+    <div id="thesisModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container palette-2 w3-center w3-padding-32">
+          <span onclick="document.getElementById('thesisModal').style.display='none'"
+         class="w3-button palette-2 p1 w3-xlarge w3-display-topright">×</span>
+         <h2 class="w3-wide">Scania Thesis Project (individual)</h2>
+         <p class="w3-center"><i>Remote interface for driverless vehicle diagnostics</i></p>
+       </header>
+       <div class="w3-container palette-3 side-padding-32">
+         <div class="w3-row">
+           <div class="w3-col s12 m6 l6 smallFont">
+             <h5 style="margin-left:24px"><i>What I did</i></h5>
+             <li>Workshops</li>
+             <li>User interviews</li>
+             <li>Prototyping</li>
+             <li>Design</li>
+             <li>Development</li>
+             <li>Demo Video</li>
+             <li>Presentations</li>
+             <li>Academic writing</li>
+           </div>
+           <div class="w3-col s12 m6 l6 smallFont">
+             <h5 style="margin-left:24px"><i>How I did it</i></h5>
+             <li>HTML/Javascript/CSS</li>
+             <li>Mapbox API</li>
+             <li>Figma</li>
+             <li>Adobe Illustrator</li>
+             <li>Adobe Premiere Pro</li>
+             <li>C#</li>
+             <li>Unity</li>
+             <li>LaTeX (Overleaf)</li>
+           </div>
+         </div>
+         <div class="w3-row verticalSpacing">
+           <div class="w3-col s12 m12 l4">
+             <div class="hej">
+               <a href="https://jesperenglund-thesis.github.io/Website/" target="_blank">
+                 <button class="w3-card circleBtn">
+                   Check out the<br>Prototype
+                 </button>
+               </a>
+             </div>
+           </div>
+           <div class="w3-col s12 m12 l8">
+             <iframe class="myVideo" width="100%" height="250px" src="https://www.youtube.com/embed/LxI5Gn6Ehhk" title="Thesis Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+         </div>
+         <p>
+           Thesis link coming soon!
+         </p>
+       </div>
       </div>
     </div>
 
-    <!-- ChallengeMe Modal -->
-    <div id="cmModal" class="w3-modal">
+    <!-- Omino Modal -->
+    <div id="ominoModal" class="w3-modal">
       <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container palette-1 w3-center w3-padding-32">
-          <span onclick="document.getElementById('cmModal').style.display='none'"
-         class="w3-button palette-1 p1 w3-xlarge w3-display-topright">×</span>
-         <h2 class="w3-wide">Challenge Me</h2>
-         <p class="w3-center"><i>A skater challenge app</i></p>
+        <header class="w3-container palette-2 w3-center w3-padding-32">
+          <span onclick="document.getElementById('ominoModal').style.display='none'"
+         class="w3-button palette-2 p1 w3-xlarge w3-display-topright">×</span>
+         <h2 class="w3-wide">Omino (Group project)</h2>
+         <p class="w3-center"><i>A fun and simple, yet puzzling puzzle game</i></p>
        </header>
-       <div class="w3-container palette-2 side-padding-32">
-         <ul class="myList">
-           <li>Javascript</li>
-           <li>HTML & CSS</li>
-           <li>React</li>
-           <li>Firebase</li>
-           <li>Graphic Design</li>
-         </ul>
+       <div class="w3-container palette-3 side-padding-32">
+         <div class="w3-row">
+           <div class="w3-col s12 m6 l6">
+             <h5 style="margin-left:24px"><i>My Contribution</i></h5>
+             <ul class="myList">
+               <li>Level Editor</li>
+               <li>Character Movement</li>
+               <li>UI</li>
+               <li>Website</li>
+             </ul>
+           </div>
+           <div class="w3-col s12 m6 l6">
+             <h5 style="margin-left:24px"><i>Tools Used</i></h5>
+             <ul class="myList">
+               <li>C#</li>
+               <li>Unity</li>
+               <li>Adobe Illustrator</li>
+               <li>HTML/Javascript/CSS</li>
+             </ul>
+           </div>
+         </div>
+         <p>
+           <a href="https://ominogamedevs.github.io/omino.github.io/" target="_blank" class="mylink">Omino website</a>
+         </p>
        </div>
       </div>
     </div>
@@ -322,70 +402,72 @@
           <div class="w3-display-container">
             <img class="zeropad" src="images/stellar/stellarSystem.png" style="width:100%;opacity:0.8">
             <span onclick="document.getElementById('stellARModal').style.display='none'"
-            class="w3-button p1 w3-xlarge w3-display-topright" style="color:#FFF">×</span>
-            <h2 class="w3-wide w3-display-topmiddle" style="color:#FFF">StellAR</h2>
-            <p class="w3-center w3-display-middle" style="color:#FFF"><i>A stellar system creator and simulator in AR</i></p>
+            class="w3-button p1 w3-xlarge w3-display-topright" style="color:#f9e6d3">×</span>
+            <h2 class="w3-wide w3-display-topmiddle" style="color:#f9e6d3">StellAR (Group project)</h2>
+            <p class="w3-center w3-display-middle" style="color:#f9e6d3"><i>A stellar system creator and simulator in AR</i></p>
           </div>
        </header>
-       <div class="w3-container palette-2 side-padding-32">
-         <ul class="myList">
-           <li>C#</li>
-           <li>Unity</li>
-           <li>Blender</li>
-           <li>Graphic Design</li>
-         </ul>
+       <div class="w3-container palette-3 side-padding-32">
+         <div class="w3-row">
+           <div class="w3-col s12 m6 l6">
+             <h5 style="margin-left:24px"><i>My Contribution</i></h5>
+             <ul class="myList">
+               <li>Procedural Mesh Generation &amp; Manipulation</li>
+               <li>Data Management/Persistence</li>
+               <li>Sound Design</li>
+               <li>Animations Explosions/UI</li>
+               <li>UI Logic</li>
+               <li>3D Modeling</li>
+               <li>Website</li>
+             </ul>
+           </div>
+           <div class="w3-col s12 m6 l6">
+             <h5 style="margin-left:24px"><i>Tools Used</i></h5>
+             <ul class="myList">
+               <li>C#</li>
+               <li>Unity</li>
+               <li>Blender</li>
+               <li>HTML/Javascript/CSS</li>
+             </ul>
+           </div>
+         </div>
          <p>
-           <a href="https://jesperenglund92.github.io/stellar-website/" target="_blank">StellAR website</a>
+           <a href="https://jesperenglund92.github.io/stellar-website/" target="_blank" class="mylink">StellAR website</a>
          </p>
        </div>
       </div>
     </div>
 
-    <!-- Omino Modal -->
-    <div id="ominoModal" class="w3-modal">
+    <!-- ChallengeMe Modal -->
+    <div id="cmModal" class="w3-modal">
       <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container palette-1 w3-center w3-padding-32">
-          <span onclick="document.getElementById('ominoModal').style.display='none'"
-         class="w3-button palette-1 p1 w3-xlarge w3-display-topright">×</span>
-         <h2 class="w3-wide">Omino</h2>
-         <p class="w3-center"><i>A fun and simple, yet puzzling puzzle game</i></p>
+        <header class="w3-container palette-2 w3-center w3-padding-32">
+          <span onclick="document.getElementById('cmModal').style.display='none'"
+         class="w3-button palette-2 p1 w3-xlarge w3-display-topright">×</span>
+         <h2 class="w3-wide">Challenge Me (Group project)</h2>
+         <p class="w3-center"><i>A skater challenge app</i></p>
        </header>
-       <div class="w3-container palette-2 side-padding-32">
-         <ul class="myList">
-           <li>C#</li>
-           <li>Unity</li>
-           <li>Graphic Design</li>
-         </ul>
-         <p>
-           <a href="https://ominogamedevs.github.io/omino.github.io/" target="_blank">Omino website</a>
-         </p>
-       </div>
-      </div>
-    </div>
-
-    <!-- Thesis Modal -->
-    <div id="thesisModal" class="w3-modal">
-      <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container palette-1 w3-center w3-padding-32">
-          <span onclick="document.getElementById('thesisModal').style.display='none'"
-         class="w3-button palette-1 p1 w3-xlarge w3-display-topright">×</span>
-         <h2 class="w3-wide">Scania Thesis Project</h2>
-         <p class="w3-center"><i>Remote interface for driverless vehicle diagnostics</i></p>
-       </header>
-       <div class="w3-container palette-2 side-padding-32">
-         <ul class="myList">
-           <li>HTML</li>
-           <li>Javascript</li>
-           <li>Mapbox API</li>
-           <li>Graphic Design</li>
-           <li>C#</li>
-           <li>Unity</li>
-           <li>LaTeX (Overleaf)</li>
-           <li>Academic writing</li>
-         </ul>
-         <p>
-           <a href="https://jesperenglund-thesis.github.io/Website/" target="_blank">Website</a>
-         </p>
+       <div class="w3-container palette-3 side-padding-32">
+         <div class="w3-row">
+           <div class="w3-col s12 m6 l6">
+             <h5 style="margin-left:24px"><i>My Contribution</i></h5>
+             <ul class="myList">
+               <li>Ideation</li>
+               <li>Wireframing</li>
+               <li>Backend Infrastructure</li>
+               <li>Logic &amp; Layout of specific screens</li>
+             </ul>
+           </div>
+           <div class="w3-col s12 m6 l6">
+             <h5 style="margin-left:24px"><i>Tools Used</i></h5>
+             <ul class="myList">
+               <li>HTML & CSS</li>
+               <li>React</li>
+               <li>Firebase</li>
+               <li>Adobe Xd</li>
+             </ul>
+           </div>
+         </div>
        </div>
       </div>
     </div>
@@ -393,30 +475,39 @@
     <!-- Squidster Modal -->
     <div id="squidModal" class="w3-modal">
       <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container palette-1 w3-center w3-padding-32">
+        <header class="w3-container palette-2 w3-center w3-padding-32">
           <span onclick="document.getElementById('squidModal').style.display='none'"
-         class="w3-button palette-1 p1 w3-xlarge w3-display-topright">×</span>
-          <h2 class="w3-wide">Squidster (Prototype)</h2>
+         class="w3-button palette-2 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Squidster (Group project)</h2>
           <p class="w3-center"><i>A mix between Twister and a musical sequencer</i></p>
         </header>
-        <div class="w3-container palette-2">
+        <div class="w3-container palette-3">
           <div class="w3-row">
-            <div class="w3-col s12 m12 l4">
+            <div class="w3-col s12 m6 l6">
+              <h5 style="margin-left:24px"><i>My Contribution</i></h5>
               <ul class="myList">
-                <li>Python</li>
-                <li>User studies</li>
+                <li>User Studies</li>
                 <li>Sketching</li>
                 <li>Prototyping</li>
-                <li>Graphic Design</li>
-                <li>LittleBits</li>
+                <li>Programming</li>
+                <li>User Testing</li>
+                <li>Sound Design</li>
                </ul>
             </div>
-            <div class="w3-col s12 m12 l8">
-              <video style="margin:20px" width="400" controls>
-                <source src="images/squidster/squidster.mp4" type="video/mp4">
-                Your browser does not support HTML video.
-              </video>
+            <div class="w3-col s12 m6 l6">
+              <h5 style="margin-left:24px"><i>Tools Used</i></h5>
+              <ul class="myList">
+                <li>Python</li>
+                <li>LittleBits</li>
+                <li>Cubase</li>
+               </ul>
             </div>
+          </div>
+          <div class="w3-center">
+            <video style="margin:20px" width="600" controls>
+              <source src="images/squidster/squidster.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
           </div>
         </div>
       </div>
@@ -425,28 +516,44 @@
     <!-- HPI Modal -->
     <div id="hpiModal" class="w3-modal">
       <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container palette-1 w3-center w3-padding-32">
+        <header class="w3-container palette-2 w3-center w3-padding-32">
           <span onclick="document.getElementById('hpiModal').style.display='none'"
-         class="w3-button palette-1 p1 w3-xlarge w3-display-topright">×</span>
-          <h2 class="w3-wide">Human Powered Interaction Project</h2>
+         class="w3-button palette-2 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">Human Powered Interaction (Group project)</h2>
           <p class="w3-center"><i>Web-based art installation controlled by human powered devices</i></p>
         </header>
-        <div class="w3-container palette-2">
+        <div class="w3-container palette-3">
           <div class="w3-row">
-            <div class="w3-col s12 m12 l4">
+            <div class="w3-col s12 m6 l6">
+              <h5 style="margin-left:24px"><i>My Contribution</i></h5>
+              <ul class="myList">
+                <li>Ideation</li>
+                <li>Prototyping</li>
+                <li>3D-Modeling</li>
+                <li>3D-Printing</li>
+                <li>Front-end Programming</li>
+                <li>Back-end Programming</li>
+                <li>Power Engineering</li>
+                <li>User Testing/Evaluation</li>
+                <li>Academic Writing</li>
+               </ul>
+            </div>
+            <div class="w3-col s12 m6 l6">
+              <h5 style="margin-left:24px"><i>Tools Used</i></h5>
               <ul class="myList">
                 <li>Javascript</li>
                 <li>p5.js</li>
                 <li>Firebase</li>
-                <li>Power engineering</li>
+                <li>Tinkercad</li>
+                <li>LaTeX (Overleaf)</li>
                </ul>
             </div>
-            <div class="w3-col s12 m12 l8">
-              <video style="margin:20px" width="400" controls>
-                <source src="images/hpi/hpivid.mov" type="video/mp4">
-                Your browser does not support HTML video.
-              </video>
-            </div>
+          </div>
+          <div class="w3-center">
+            <video style="margin:20px" width="600" controls>
+              <source src="images/hpi/hpivid.mov" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
           </div>
         </div>
       </div>
@@ -455,18 +562,33 @@
     <!-- DND Modal -->
     <div id="dndModal" class="w3-modal">
       <div class="w3-modal-content w3-animate-top w3-card-4">
-        <header class="w3-container palette-1 w3-center w3-padding-32">
+        <header class="w3-container palette-2 w3-center w3-padding-32">
           <span onclick="document.getElementById('dndModal').style.display='none'"
-         class="w3-button palette-1 p1 w3-xlarge w3-display-topright">×</span>
-          <h2 class="w3-wide">DnD Spellbook</h2>
+         class="w3-button palette-2 p1 w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide">DnD Spellbook (Group project)</h2>
           <p class="w3-center"><i>API-based Dungeons & Dragons Spellbook</i></p>
         </header>
-        <div class="w3-container palette-2 side-padding-32">
-          <ul class="myList">
-            <li>Javascript</li>
-            <li>Vue.js</li>
-            <li>Firebase</li>
-          </ul>
+        <div class="w3-container palette-3 side-padding-32">
+          <div class="w3-row">
+            <div class="w3-col s12 m6 l6">
+              <h5 style="margin-left:24px"><i>My Contribution</i></h5>
+              <ul class="myList">
+                <li>Graphic Design</li>
+                <li>Front-end Programming</li>
+                <li>Back-end Programming</li>
+              </ul>
+            </div>
+            <div class="w3-col s12 m6 l6">
+              <h5 style="margin-left:24px"><i>Tools Used</i></h5>
+              <ul class="myList">
+                <li>Javascript</li>
+                <li>Vue.js</li>
+                <li>Firebase</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Photoshop</li>
+              </ul>
+            </div>
+          </div>
           <p>
             <a href="https://inprogdndproject.netlify.app/?fbclid=IwAR3Zo5jnAZF0T6b9It_OhHKfOSg-bzqTERxNEWOEb2axK4yU_qfUWVVA3NQ#/" target="_blank">Website</a>
           </p>
@@ -475,7 +597,7 @@
     </div>
 
     <!-- The Contact Section -->
-    <div class="w3-container w3-padding-32 palette-1" style="width:100%" id="contact">
+    <div class="w3-container w3-padding-32 palette-3" style="width:100%" id="contact">
       <h2 class="w3-wide w3-center">CONTACT</h2>
       <p class="w3-opacity w3-center"><i>Do you want to do business?</i></p>
       <div class="w3-display-container w3-padding-16" style="height:200px">
@@ -486,8 +608,8 @@
             <i class="fa fa-envelope" style="width:30px"> </i> jesper.englund92@gmail.com<br>
           </div>
           <div class="w3-xlarge">
-            <a href="https://www.facebook.com/kippa.englund/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity" style="width:30px"></i></a>
-            <a href="https://www.linkedin.com/in/jesper-englund-715556174/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity" style="width:30px"></i></a>
+            <a href="https://www.facebook.com/kippa.englund/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity" style="width:30px;color:#6840a8"></i></a>
+            <a href="https://www.linkedin.com/in/jesper-englund-715556174/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity" style="width:30px;color:#6840a8"></i></a>
           </div>
         </div>
       </div>

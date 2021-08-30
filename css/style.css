@@ -1,27 +1,55 @@
-.palette-1 {color:#fff !important;background-color:#bed1c5 !important}
+.palette-1 {color:#000 !important;background-color:#fffefd !important}
 .palette-1-light {color:#000 !important;background-color:#f2f6f3 !important}
 .palette-1-dark {color:#fff !important;background-color:#5c826a !important}
 .p1:hover {color:#000 !important;background-color:#f2f6f3 !important}
 
-.palette-2 {color:#000 !important;background-color:#fbf7f0 !important}
+.palette-2 {color:#f9e6d3 !important;background-color:#00a96b !important}
 .palette-2-light {color:#000 !important;background-color:#fffefe !important}
 .palette-2-dark {color:#fff !important;background-color:#c18d33 !important}
 
-.jobcontainer {margin:0px !important}
-.jobcontainer:hover {color:#000 !important;background-color:#fffefe !important}
+.jobcontainer {margin:0px !important; width:100%; height: 240px;}
+.jobcontainer:hover {color:#000 !important;background-color:#e6e6e6 !important}
 .jobcontainer:active {border:0px !important; outline: 0}
 .jobcontainer:focus {border:0px !important; outline: 0}
 
-.palette-3 {color:#fff !important;background-color:#cdc9c3 !important}
+.jobcontcont {
+  padding: 20px !important;
+}
+
+.palette-3 {color:#000 !important;background-color:#efeff2 !important}
 .palette-3-light {color:#000 !important;background-color:#fcfcfb !important}
 .palette-3-dark {color:#fff !important;background-color:#6c655a !important}
 
-.palette-4 {color:#fff !important;background-color:#555555 !important}
+.palette-4 {color:#000 !important;background-color:#f9e6d3 !important}
 .palette-4-light {color:#000 !important;background-color:#f5f5f5 !important}
 .palette-4-dark {color:#fff !important;background-color:#2a2a2a !important}
 
+.palette-5 {color:#fff !important;background-color:#6840a8 !important}
+.palette-5-light {color:#000 !important;background-color:#f5f5f5 !important}
+.palette-5-dark {color:#fff !important;background-color:#2a2a2a !important}
+
+.break{
+  background-color:#6840a8 !important;
+  width:100%;
+  height:2px;
+  margin-top: -1px;
+  background-image: linear-gradient(to left, #efeff2, #6840a8, #6840a8, #6840a8, #efeff2);
+}
+
+.exit {
+  color:#fffefd !important;
+}
+
+.textongreen {
+  color: #f9e6d3;
+}
+
 .main-font {
   font-family: "Avenir Next" !important;
+}
+
+.mylink {
+  color: #6840a8;
 }
 
 .col-1 {
@@ -36,6 +64,10 @@
   font-size: 40px;
 }
 
+.smallFont{
+  font-size: 10pt;
+}
+
 .header {
   padding: 64px;
 }
@@ -43,10 +75,10 @@
 .nextbtn {
   background-color:transparent;
   border:0px;
-  color: #fff;
+  color: #f9e6d3;
 }
 .nextbtn:hover {
-  color: #555;
+  color: #787572;
   cursor:pointer;
 }
 
@@ -131,4 +163,35 @@ ul.myList li::before {
   right: 0px;
   margin-top: 0px;
   padding-top: 0px;
+}
+
+.verticalSpacing {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.circleBtn {
+  border-radius: 50%;
+  background-color: #6840a8;
+  border: none;
+  color: #f9e6d3;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  width:200px;
+  height:200px;
+  float: auto;
+  margin-top:25px;
+  margin-bottom:25px;
+}
+
+.circleBtn:hover {
+  cursor:pointer;
+  background-color: #e0d6f0;
+  color: #000;
 }
