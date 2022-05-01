@@ -122,7 +122,7 @@ ul.myList {
 
 ul.myList li::before {
   content: "\2022";
-  color: #bed1c5;
+  color: #6840a8;
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -180,18 +180,50 @@ ul.myList li::before {
   padding-bottom: 40px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   width:200px;
   height:200px;
-  float: auto;
   margin-top:25px;
   margin-bottom:25px;
+  transition: width 0.3s, height 0.3s;
 }
 
 .circleBtn:hover {
   cursor:pointer;
-  background-color: #e0d6f0;
-  color: #000;
+  background-color: #9c7ece;
+  color: #fdf5ed;
+  width: 216px;
+  height: 216px;
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
+.circleBtn2 {
+  border-radius: 50%;
+  background-color: #f9e6d3;
+  border: none;
+  color: #6840a8;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  width:200px;
+  height:200px;
+  margin-top:25px;
+  margin-bottom:25px;
+  transition: width 0.3s, height 0.3s;
+}
+
+.circleBtn2:hover {
+  cursor:pointer;
+  background-color: #fdf5ed;
+  color: #2a2a2a;
+  width: 216px;
+  height: 216px;
+  margin-top: 17px;
+  margin-bottom: 17px;
 }
